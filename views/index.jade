@@ -5,6 +5,6 @@ block content
     p Welcome to #{title}
     form(method="post", action="/calculate")
         #colorPickers
-        input(class="color",id="picker1")
-        input(class="color",id="picker2")
+        input(class="color",id="picker1", name="picker1")
+        input(class="color",id="picker2", name="picker2")
         input(type="submit", value="Compare")
