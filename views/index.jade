@@ -1,7 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  #container.blueDiv
-        &nbsp;
+    h1= title
+    p Welcome to #{title}
+    form(method="post", action="/calculate")
+        #colorPickers
+        input(class="color",id="picker1")
+        input(class="color",id="picker2")
+        input(type="submit", value="Compare")
